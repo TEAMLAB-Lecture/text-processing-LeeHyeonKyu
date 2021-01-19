@@ -63,7 +63,7 @@ def no_vowels(input_string):
         return ''.join(strings.split(vowel))
 
     no_vowels_string = input_string
-    for v in ['a', 'e', 'i', 'o', 'u'] :
+    for v in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] :
         no_vowels_string = rm_vowel(no_vowels_string, v)
 
     return no_vowels_string
