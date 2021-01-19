@@ -59,10 +59,11 @@ def no_vowels(input_string):
             ''W lv Pythn!'
     """
 
-    def rm_vowels(vowel:str) -> str:
-        input_string = ''.join(input_string.split(vowel))
-    
-    for v in ['a', 'e', 'i', 'o', 'u'] :
-        rm_vowels(v)
+    def rm_vowel(strings:str, vowel:str) -> str:
+        return ''.join(strings.split(vowel))
 
-    return input_string
+    no_vowels_string = input_string
+    for v in ['a', 'e', 'i', 'o', 'u'] :
+        no_vowels_string = rm_vowel(no_vowels_string, v)
+
+    return no_vowels_string
